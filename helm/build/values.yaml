@@ -1,0 +1,15 @@
+app:
+  name: BLR0-wind-turbine-app
+  namespace: BLR0
+  cluster: .apps.wearedevs.rl97.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc/BLR0-wind-turbine
+  org: WindTurbineInc
+  name: BLR0-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: BLR0/wind-turbine-app
+  tag: latest
